@@ -1,7 +1,250 @@
+<!DOCTYPE html>
+<html>
 <head>
-SurpriseBillFacts
-</head>
+<style>
+html, body {
+  padding: 0;
+  margin: 0;
+}
 
-<h1>
-SurpriseBillFacts is dedicated to hosting facts about Surprise Medical Bills, verified by the academic community and maintained by Ben Chartock at the Wharton School, University of Pennsylvania.
-</h1>
+.header {
+  margin: 0;
+}
+div.container {
+    width: 100%;
+    border: 10px black;
+}
+
+header  {
+    padding: 1em;
+    color: black;
+    background-color: lightblue;
+    clear: left;
+    text-align: left;
+}
+
+footer {
+    padding: 1em;
+    color: black;
+    background-color: lightblue;
+    clear: left;
+    text-align: center;
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+
+}
+nav2 {
+    float: right;
+    max-width: 360px;
+    margin: 0;
+    padding: 1em;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    margin-right: 470px;
+    border-left: 3px solid white;
+    margin-bottom: 15px;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+                        <img   src="logo.png" width="300">
+
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<article>
+  <h1>When Shopping For Health Care, Will Consumers Consider Surprise Out-of-Network Medical Bills?</h1>
+  <h4>September 6, 2017</h4>
+  <hr>
+  <p>As plenty of <a href="http://www.nber.org/papers/w23623">current research</a> shows (including <a href="http://content.healthaffairs.org/content/early/2016/12/13/hlthaff.2016.0970.abstract">my own</a>), surprise out-of-network medical bills are quite frequent. According to most recent research, they occur about one-fifth of the time when a patient goes to the hospital for emergency inpatient care. This fact is solid. It has been verified by multiple academics working independently and using multiple sources of health care data. But a major question remains: <i>what should be done about this problem?</i> </p>
+    <p>Many states have tackled surprise out-of-network medical bills with <a href="https://twitter.com/GregAbbott_TX/status/863858129406230528?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fwww.dallasnews.com%2Fbusiness%2Fhealth-care%2F2017%2F05%2F12%2Ftexas-expands-law-help-people-fight-unexpected-medical-bills">legislative solutions</a>, like the one offered by Gov. Greg Abbott of Texas this past May. Can market forces, e.g., consumers shopping around, help lower the rates of surprise bills? An interesting article in the September issue of Health Affairs implies that it might.</p>
+  <p>Authors Sherry Glied of the Wagner School at NYU and Stuart Altman of the Heller School at Brandeis University published a commentary piece, titled ''Beyond Antitrust: Health Care And Insurance Market Trends and the Future of Competition'', where they write: </p>
+  <p style="margin-left: 40px">''An important difference between the 1990's model and these new models is that there is little evidence of consumer loyalty to these narrow network-based or tiered insurance plans. Consumers don't appear to care which insurer provides access to the network. They continue to shop based on the providers in the network--not the insurer sponsoring it''  </p>
+  <p>While <a href="http://content.healthaffairs.org/content/36/9/1572.abstract">Glied and Altman</a> suggest bundling emergency services as a solution for surprise medical bills (an idea also suggested by Zack Cooper at Yale), I read their above paragraph as open to the possibility that surprise medical bills might be a component of health care competition. In a similar fashion to how hospitals compete to reduce wait times at Emergency Rooms and provide innovative treatments, hospitals and networks may chisel away the surprise medical bills problem via market competition. It would take responsiveness on the part of consumers, but it is possible. There is no published evidence yet that consumers shop around based on surprise out-of-network medical bills, but if consumers shop based on overall experience, why not expect that surprise out-of-network bills effect patient behavior? </p>
+<hr>
+</article>
+<article>
+  <h1>Fact: Surprise Medical Bills Occur With Frequency</h1>
+  <h4>August 15, 2017</h4>
+  <hr>
+  <p>Surprise Bills occur freuquently. Emergency Inpatient cases are the most likely to result in potential surprise bill situations. Emergency Outpatient cases follows in rate of occurence. Elective Inpatient cases are not as likely. </p>
+  <script type="text/javascript">
+ 
+// jsData 
+function gvisDataLineChartID9b7949780329 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"2007",
+27.8,
+17.7,
+14.3
+],
+[
+"2008",
+26.9,
+16.5,
+13.2
+],
+[
+"2009",
+24.9,
+16.2,
+11.6
+],
+[
+"2010",
+22.6,
+15.2,
+10.5
+],
+[
+"2011",
+20.9,
+16,
+10.9
+],
+[
+"2012",
+19.6,
+15.3,
+10.3
+],
+[
+"2013",
+20.2,
+15.4,
+10
+],
+[
+"2014",
+19.8,
+13.8,
+9
+] 
+];
+data.addColumn('string','year');
+data.addColumn('number','Emergency Room (Inpatient)');
+data.addColumn('number','Emergency Room (Outpatient)');
+data.addColumn('number','Elective (Inpatient)');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartLineChartID9b7949780329() {
+var data = gvisDataLineChartID9b7949780329();
+var options = {};
+options["allowHtml"] = true;
+options["legend"] = "bottom";
+options["title"] = "Percentage of hospital cases with potential surprise medical bills, 2007-14";
+options["vAxis"] = {title:'Percentage', titleTextStyle:{color:' black'}};
+
+
+    var chart = new google.visualization.LineChart(
+    document.getElementById('LineChartID9b7949780329')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartLineChartID9b7949780329);
+})();
+function displayChartLineChartID9b7949780329() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartLineChartID9b7949780329"></script>
+ 
+<!-- divChart -->
+  
+<div id="LineChartID9b7949780329" w
+  style="width: 1000; height: automatic;">
+</div>
+
+<br>
+Source: <br>
+ Figure 1, Garmon, Christopher, and Benjamin Chartock. "One in five inpatient emergency department cases may lead to surprise bills." <a href="http://content.healthaffairs.org/content/early/2016/12/13/hlthaff.2016.0970.abstract">Health Affairs</a> (2016): 10-1377.
+<hr>
+</article>
+
+
+<footer>                  Copyright &#169; 2017 Benjamin Chartock | SurpriseBillFacts.github.io
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
